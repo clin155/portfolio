@@ -1,0 +1,13 @@
+.frontPage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max(100vw, 1000px);
+    height: 100vh;
+
+}
+
+.secTrees {
+    @extend .frontPage;
+    transform: translateX(-50%) scaleY(-1);
+}
