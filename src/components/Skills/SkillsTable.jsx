@@ -16,7 +16,7 @@ export default function SkillsTable(props) {
                 Object.entries(entry).forEach(([key2, val2]) => {
                     elems.push(<ul/>)
                     elems.push(<h3 className="titleSkill">{key2}</h3>);
-                    elems.push(<hr/>);
+                    // elems.push(<hr/>);
                     val2.forEach((entry) => {
                         if (typeof(entry) === 'string') {
                             elems.push(<li>{entry}</li>);
