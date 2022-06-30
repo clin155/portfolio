@@ -6,7 +6,12 @@
     height: 100vh;
 
 }
+.background {
+    @extend .frontPage;
+    height: 150vh;
+    width: max(150vw, 1000px);
 
+}
 .secTrees {
     @extend .frontPage;
     transform: translateX(-50%) scaleY(-1);
