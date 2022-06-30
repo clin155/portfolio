@@ -14,7 +14,7 @@
         {
             "Frontend": ["HTML","React","CSS","Sass","Vue.js"],
             "Backend": ["Flask","Express.js","Node.js","Docker","GraphQL"],
-            "Misc": ["Jupyter notebooks","Git", "laTeX"]
+            "Misc": ["Jupyter notebooks","Git", "LaTeX"]
         }
     ],
     "Databases": [

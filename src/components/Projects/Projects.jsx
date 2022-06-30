@@ -1,12 +1,10 @@
-import "./Skills.scss";
+import "./Projects.scss";
 import trees from "./../../static/images/trees.png";
 
-import SkillsTable from "./SkillsTable.jsx";
 
-export function Skills(props) {
+export function Projects(props) {
     return (
-        <div className='skillsPage table'>
-            <SkillsTable />
+        <div className='skillsPage'>
             <h1 className="title title2">Skills <br></br>&amp; Experience</h1>
             <img className='frontPage secTrees' src={trees} alt="background"></img>
 

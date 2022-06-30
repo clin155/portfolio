@@ -21,10 +21,9 @@ function App() {
     <ParallaxLayer offset={0}>
       <img className='frontPage' src={trees} alt="background"></img>
       {/* <img className='secTrees' src={trees} alt="background"></img> */}
-
     </ParallaxLayer>
 
-    <ParallaxLayer offset={1}>
+    <ParallaxLayer offset={1} >
       <Skills />
     </ParallaxLayer>
     </Parallax>

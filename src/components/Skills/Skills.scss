@@ -40,22 +40,33 @@
     z-index: 2;
     position: relative;
     //vertical-center 
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: 11vh;
 
     width: fit-content;
     height: 65vh;
 
-    overflow: overlay;
+    overflow: hidden;
     font-size: 1.5em;
 
 
 }
+
+.skillsTable:hover {
+    overflow: overlay;
+}
+
 .titleSkill {
     text-align: center;
     margin-bottom: 1%;
+
 }
 // hr {
 //     margin-top: 1%;
 // }
+
+.title2 {
+    margin-left: 7rem;
+    margin-top: 12rem;
+    font-size: 4rem;
+
+}

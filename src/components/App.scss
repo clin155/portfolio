@@ -5,10 +5,15 @@
     width: max(100vw, 1000px);
     height: 100vh;
 
+
 }
 .background {
     @extend .frontPage;
     height: 150vh;
     width: max(150vw, 1000px);
 
+}
+
+.table {
+    display: table;
 }
