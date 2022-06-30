@@ -1,0 +1,61 @@
+@import './Scroll.scss';
+// parallax stuff
+.frontPage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max(100vw, 1000px);
+    height: 100vh;
+
+}
+.skillsPage {
+    width: inherit;
+    height: inherit;
+    background-color: rgb(16,30,50);
+}
+
+.secTrees {
+    z-index: 1;
+    top: 0;
+    //xy flip
+    transform: translateX(-50%) scale(-1, -1);
+}
+
+
+// skills list
+.skillsTable > *{
+    color: white;
+    font-size: inherit;
+    margin-bottom: 2%;
+}
+
+.skillsTable {
+    @extend .vertical-scroll;
+    // border: solid 1px white;
+    padding: 3%;
+    padding-right: 1%;
+    padding-top: 0%;
+    margin-right: 10%;
+    float: right;
+    z-index: 2;
+    position: relative;
+    //vertical-center 
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    width: fit-content;
+    height: 65vh;
+
+    overflow: overlay;
+    font-size: 5em;
+
+
+}
+.titleSkill {
+    text-align: center;
+    margin-bottom: 0%;
+}
+hr {
+    margin-top: 1%;
+}

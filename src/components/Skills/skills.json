@@ -1,0 +1,39 @@
+{
+    "Languages": [
+        "Python",
+        "C++",
+        "JavaScript",
+        "C",
+        "SQL",
+        "C Sharp",
+        "Reason",
+        "Swift",
+        "MATLAB"
+    ],
+    "Frameworks & Technologies": [
+        {
+            "Frontend": ["HTML","React","CSS","Sass","Vue.js"],
+            "Backend": ["Flask","Express.js","Node.js","Docker","GraphQL"],
+            "Misc": ["Jupyter notebooks","Git", "laTeX"]
+        }
+    ],
+    "Databases": [
+        "MongoDB",
+        "PostgreSQL",
+        "sqlite3",
+        "Firebase"
+    ],
+    "Cloud Servies": [
+        {"AWS": [
+            "S3",
+            "Lambda Functions",
+            "EC2",
+            "API Gateway",
+            "ECS",
+            "Route 53",
+            "CloudFront",
+            "DynamoDB"
+        ]
+        }
+    ]
+}

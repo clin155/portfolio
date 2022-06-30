@@ -12,7 +12,3 @@
     width: max(150vw, 1000px);
 
 }
-.secTrees {
-    @extend .frontPage;
-    transform: translateX(-50%) scaleY(-1);
-}
