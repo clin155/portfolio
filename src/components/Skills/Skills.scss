@@ -14,13 +14,6 @@
     background-color: rgb(16,30,50);
 }
 
-.secTrees {
-    z-index: 1;
-    top: 0;
-    //xy flip
-    transform: translateX(-50%) scale(-1, -1);
-}
-
 
 // skills list
 .skillsTable > *{

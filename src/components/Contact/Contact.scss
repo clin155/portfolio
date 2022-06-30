@@ -1,0 +1,15 @@
+
+
+.contactPage {
+    width: inherit;
+    height: inherit;
+    background-color: rgb(45,52,125);
+}
+
+.thirdTrees {
+    z-index: 1;
+    top: 0;
+    
+    //xy flip
+    transform: translateX(-50%) scaleY(-1);
+}
