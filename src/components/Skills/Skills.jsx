@@ -1,6 +1,6 @@
 import "./Skills.scss";
 
-import SkillsTable from "./SkillsTable.jsx";
+import { SkillsTable } from "./";
 
 export function Skills(props) {
     return (

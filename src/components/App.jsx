@@ -2,11 +2,11 @@ import './App.scss';
 import moon from "./../static/images/moon.png";
 import trees from "./../static/images/trees.png";
 
-import {Home} from "./Home/Home.jsx"
-import {Skills} from "./Skills/Skills.jsx";
-import { Projects } from './Projects/Projects.jsx';
-import { Contact } from './Contact/Contact.jsx';
-import { About } from './About/About.jsx';
+import {Home} from "./Home"
+import {Skills} from "./Skills";
+import { Projects } from './Projects';
+import { Contact } from './Contact';
+import { About } from './About';
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 

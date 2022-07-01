@@ -2,7 +2,7 @@ import './Skills.scss';
 import data from './skills.json';
 
 
-export default function SkillsTable(props) {
+export function SkillsTable(props) {
     let elems = []
     Object.entries(data).forEach(([key, value]) => {
         elems.push(<h3 className='titleSkill'>{key}</h3>);
