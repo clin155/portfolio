@@ -1,23 +1,15 @@
-.frontPage {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max(100vw, 1000px);
-    height: 100vh;
+@import './Global.scss';
 
+@import './Skills/Scroll.scss';
+@import './Skills/Skills.scss';
+@import './Projects/Projects.scss';
+@import './Home/Home.scss';
+@import './About/About.scss';
+@import './Contact/Contact.scss';
 
-}
-.background {
-    @extend .frontPage;
-    height: 150vh;
-    width: max(150vw, 1000px);
-
-}
-
-.table {
-    display: table;
+.App {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
 }
 
-.block {
-    display: block;
-}

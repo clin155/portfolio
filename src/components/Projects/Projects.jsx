@@ -14,12 +14,13 @@ export function Projects(props) {
     const images = [moon, spotify, instagram,firebase,player,chess];
     const elem = []
     images.forEach((data) => {
-        elem.push(<img src={data} alt="proj"/>)
+        elem.push(
+        <a href="http://www.google.com"><img class="gork" src={data} alt="proj"/></a>)
     })
     return (
-        <div className='skillsPage table'>
-            <h1 className="title3">Projects</h1>
-            <img className='fourthTrees' src={trees} alt="background"></img>
+        <div className='page'>
+            <h1 className="middleTitle">Projects</h1>
+            <img className='frontScroll' src={trees} alt="background"></img>
 
             <div className="projects">{elem}</div>
         </div>        
