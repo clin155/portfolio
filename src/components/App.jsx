@@ -21,19 +21,3 @@ function App() {
 
 export default App;
 
-    
-// <ParallaxLayer offset={0} style={{
-//   backgroundImage: `url(${background})`,
-//   backgroundSize: 'cover',
-
-// }}/> 
-// <ParallaxLayer offset={0} style={{
-//   backgroundImage: `url(${moon})`,
-//   backgroundSize: 'cover',
-
-// }}/>
-// <ParallaxLayer offset={0} style={{
-//   backgroundImage: `url(${trees})`,
-//   backgroundSize: 'cover',
-
-// }}/> 

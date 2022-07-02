@@ -12,9 +12,9 @@ export function Home(props) {
 
     return (
       <div className="page">
-          <Scroller img={background} spd={0.5} classs="frontScroll"/>
+          <Scroller img={background} spd={1} classs="frontScroll"/>
           <Scroller img={moon} spd={1} classs="frontScroll"/>
-          <Scroller img={trees} spd={2} classs="frontScrollTrees"/>
+          <Scroller img={trees} spd={1} classs="frontScrollTrees"/>
           <h1 className='title'>Hi,<br></br>I'm Chris.</h1>
       </div>
     )

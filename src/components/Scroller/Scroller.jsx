@@ -2,25 +2,26 @@ import "./../App.scss";
 
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import scrollTrigger from 'gsap/ScrollTrigger'
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(scrollTrigger)
 
 export function Scroller(props) {
+    gsap.registerPlugin(ScrollTrigger)
 
     const ref = useRef();
+    const { spd, classs } = props
 
     useEffect(() => {
-        const { spd, classs } = props
         gsap.to(ref.current, {
             yPercent: spd,
-            scrub: true,
-            ease: 'none',
             scrollTrigger: {
-                trigger: classs
+                trigger: ref.current,
+                markers: true,
+                scrub: true,
+                ease: 'none',
             }
         })
     })
 
-    return <img className={props.classs} src={props.img}  alt="background"></img>
+    return <img className={props.classs} src={props.img} ref={ref} alt="background"></img>
 }
