@@ -1,5 +1,17 @@
 .frontScrollTrees {
+    position: relative;
     @extend .frontScroll;
-    margin-top: 10vw;
+    margin-top: 5vw;
+    z-index: 3;
 
+}
+
+.frontPage {
+    @extend .page;
+    // height: calc(100vh + 5vw);
+}
+
+
+.frontScroll2 {
+    @extend .frontScroll;
 }

@@ -1,4 +1,7 @@
 @import './Scroll.scss';
+
+$primary-color: rgb(16,30,50);
+
 // parallax stuff
 .page3 {
     display: grid;
@@ -10,8 +13,9 @@
     grid-template-areas: "one", "two";
 
     padding-bottom: 10vw;
+    width: 100vw;
+    background-color: $primary-color;
 }
-      
 
 
 

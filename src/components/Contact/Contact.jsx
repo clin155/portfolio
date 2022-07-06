@@ -1,6 +1,6 @@
 import "./Contact.scss";
 import trees from "./../../static/images/trees.png";
-import background from "./../../static/images/background.png";
+import background from "./../../static/images/background-min.png";
 
 export function Contact(props) {
     return (

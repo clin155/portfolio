@@ -1,13 +1,4 @@
-.flip {
+.secTrees {
     @extend .frontScroll;
     transform: scaleY(-1);
-}
-.secondpage {
-    position: relative;
-    width: max(100vw, 1000px);
-    display: table;
-}
-
-.secondpage > * {
-    display: table-row;
 }

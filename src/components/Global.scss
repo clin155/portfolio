@@ -21,14 +21,18 @@ $text-color: white;
 
     align-self: center;
     justify-content: center;
+    background-color: $primary-color;
+    width: 100vw;
+
 }
       
 .page > * {
     grid-area: overlap;
+
 }
 
 .frontScroll {
-    width: max(100vw, 1000px);
+    width: max(100vw, 1000px) !important;
     object-fit: cover;
 
 }
