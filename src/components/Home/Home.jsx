@@ -1,9 +1,11 @@
 import './../App.scss';
-import { Background, Layer1, Layer2, Layer3, Layer4, Moon } from "./../Scroller";
+import { Background, Layer } from "./../Scroller";
 import React from 'react';
 
 import trees from "./../../static/images/trees-min.png";
-
+import layer1 from "./../../static/images/layer 1-min.png";
+import layer2 from "./../../static/images/layer 2-min.png";
+import moon from "./../../static/images/moon-min.png";
 
 export class Home extends React.Component {
   constructor(props) {
@@ -22,12 +24,12 @@ export class Home extends React.Component {
     const { height} = this.state;
     return (      
     <div className="frontPage" style={{"height": height.toString()+"px"}}>
-    <Background classs="frontScroll"/>
-    <Moon classs="frontScroll"/>
-    <Layer4 classs="frontScroll"/>
-    <Layer3 classs="frontScroll"/>
-    <Layer2 classs="frontScroll"/>
-    <Layer1 classs="frontScroll"/>
+    <Background classs="frontScroll" />
+    <Layer classs="frontScroll" percent={170} end="+=4000" layer={moon}/>
+    {/* <Layer classs="frontScroll" percent={150} end="+=3700" layer={layer4}/> */}
+    {/* <Layer classs="frontScroll" percent={150} end="+=3700" layer={layer3}/> */}
+    <Layer classs="frontScroll"  percent={150} end="+=4000" layer={layer2}/>
+    <Layer classs="frontScroll" percent={250} end="+=8000" layer={layer1}/>
     <Trees classs="frontScrollTrees" handleResize={this.handleResize}/>
     <h1 className='title'>Hi,<br></br>I'm Chris.</h1>
     </div>
