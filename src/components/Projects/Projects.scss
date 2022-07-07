@@ -1,8 +1,6 @@
+$primary-color: rgb(16,30,50);
 
 .projects {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, clamp(100px, 40%, 5000px));
     display: grid;
     gap: 5em;
     grid-template-columns: repeat(3, 1fr);
@@ -10,6 +8,7 @@
     align-items: center;
     width: max(40vw, 400px);
     height: 50vh;
+    margin: 5vw;
 }
 
 .gork {
@@ -18,4 +17,15 @@
     // object-fit: cover;
     width: 100%;
     // width: max(100%, 75px);
+}
+
+.fourthPage {
+    position: relative;
+    z-index: inherit;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
