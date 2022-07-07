@@ -1,13 +1,14 @@
-import "./About.scss";
-import trees from "./../../static/images/trees.png";
+import "./../App.scss";
+import trees from "./../../static/images/trees-min.png";
 
+// import { Scroller } from './../Scroller/Scroller.jsx'
 
 export function About(props) {
     return (
-        <div className='skillsPage table'>
-            <h1 className="title title2">About Me</h1>
-            <img className='frontPage secTrees' src={trees} alt="background"></img>
-
+        <div className='page'>
+            <h1 className="smallerTitle">About Me</h1>
+            <img className='secTrees' src={trees} alt="background"></img>
+            {/* <Scroller img={trees} spd={1} classs="flip"/> */}
         </div>        
     )
 }

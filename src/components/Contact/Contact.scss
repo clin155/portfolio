@@ -1,15 +1,131 @@
-
-
-.contactPage {
-    width: inherit;
-    height: inherit;
-    background-color: rgb(45,52,125);
+@import "./../Global.scss";
+@import "./Cube.scss";
+.pText {
+    text-align: justify;
+    font-size: large;
+    color: white;
+    width: 75%;
 }
 
-.thirdTrees {
-    z-index: 1;
-    top: 0;
-    
-    //xy flip
-    transform: translateX(-50%) scaleY(-1);
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.contactFlex {
+    margin-left: 10%;
+    grid-area: a;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+// .contact-form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items:flex-start;
+//     margin-top: 4%;
+//     background-color: $primary-color;
+//     padding: 3%;
+//     // margin-right: 12%;
+// }
+
+// input {
+//     width: 25vw;
+//     margin-bottom: 15%;
+// }
+
+// .last {
+//     margin-bottom: 0px;
+// }
+
+.title2 {
+    margin-top: 10vw;
+    text-align: left;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 4%;
+}
+
+.contact-form {
+    margin-top: 5%;
+    margin-bottom: 20%;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+  
+    .flat-button {
+      color: #ffd700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+  

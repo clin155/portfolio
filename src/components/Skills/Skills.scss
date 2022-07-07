@@ -1,18 +1,23 @@
+@import './../Global.scss';
 @import './Scroll.scss';
-// parallax stuff
-.frontPage {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max(100vw, 1000px);
-    height: 100vh;
 
+$primary-color: rgb(16,30,50);
+
+// parallax stuff
+.page3 {
+    display: grid;
+    align-content: center;
+    position: relative;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "one", "two";
+
+    padding-bottom: 10vw;
+    width: 100vw;
+    background-color: $primary-color;
 }
-.skillsPage {
-    width: inherit;
-    height: inherit;
-    background-color: rgb(16,30,50);
-}
+
 
 
 // skills list
@@ -24,28 +29,22 @@
 
 .skillsTable {
     @extend .vertical-scroll;
-    // border: solid 1px white;
-    padding: 3%;
-    padding-right: 1%;
-    padding-top: 0%;
-    margin-right: 10%;
     float: right;
     z-index: 2;
     position: relative;
-    //vertical-center 
+
     margin-top: 11vh;
-
+    margin-bottom: 11vh;
+    margin-left: 16vw;
     width: fit-content;
-    height: 65vh;
+    height: 500px;
 
-    overflow: hidden;
     font-size: 1.5em;
-
-
-}
-
-.skillsTable:hover {
-    overflow: overlay;
+    
+    overflow: hidden;
+    &:hover {
+        overflow: overlay;
+    }
 }
 
 .titleSkill {
@@ -53,13 +52,10 @@
     margin-bottom: 1%;
 
 }
-// hr {
-//     margin-top: 1%;
-// }
 
-.title2 {
-    margin-left: 7rem;
-    margin-top: 12rem;
-    font-size: 4rem;
-
+.topSkill {
+    @extend .smallerTitle;
+    margin-top: 0px;
 }
+
+

@@ -27,5 +27,5 @@ export function SkillsTable(props) {
         })
     })
 
-    return <div className="skillsTable vertical-scroll">{elems}</div>
+    return <div className="skillsTable">{elems}</div>
 };

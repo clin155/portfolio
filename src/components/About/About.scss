@@ -1,6 +1,4 @@
 .secTrees {
-    z-index: 1;
-    top: 0;
-    //xy flip
-    transform: translateX(-50%) scale(-1, -1);
+    @extend .frontScroll;
+    transform: scaleY(-1);
 }

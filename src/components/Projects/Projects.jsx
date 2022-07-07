@@ -1,5 +1,4 @@
 import "./Projects.scss";
-import trees from "./../../static/images/trees.png";
 
 //projects img
 import chess from "./../../static/images/chess.png";
@@ -9,17 +8,21 @@ import moon from "./../../static/images/moon2.png";
 import player from "./../../static/images/player.png";
 import spotify from "./../../static/images/spotify.png";
 
+//data
+import metadata from "./projects.json";
+
 
 export function Projects(props) {
     const images = [moon, spotify, instagram,firebase,player,chess];
     const elem = []
-    images.forEach((data) => {
-        elem.push(<img src={data} alt="proj"/>)
+    images.forEach((data, index) => {
+        elem.push(
+        <a href={metadata[index]["href"]}><img className="gork" src={data} alt="proj"/></a>)
     })
     return (
-        <div className='skillsPage table'>
-            <h1 className="title3">Projects</h1>
-            <img className='fourthTrees' src={trees} alt="background"></img>
+        <div className='fourthPage'>
+            <h1 className="middleTitle">Projects</h1>
+            {/* <img className='frontScroll' src={trees} alt="background"></img> */}
 
             <div className="projects">{elem}</div>
         </div>        

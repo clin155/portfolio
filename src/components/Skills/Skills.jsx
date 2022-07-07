@@ -4,9 +4,10 @@ import { SkillsTable } from "./";
 
 export function Skills(props) {
     return (
-        <div className='skillsPage table'>
+        <div className='page3'>
+            <h1 className="topSkill">Skills &amp; Experience</h1>
+            {/* <img className='frontPage secTrees' src={tzees} alt="background"></img> */}
             <SkillsTable />
-            <h1 className="title title2">Skills <br></br>&amp; Experience</h1>
-        </div>
+        </div>   
     )
 }

@@ -1,12 +1,17 @@
-.title {
-    z-index: 2;
+.frontScrollTrees {
     position: relative;
-    margin: 5vw;
-    margin-left: 7rem;
-    color: white;
-    font-size: 5rem;
-    margin-top: 8rem;
+    @extend .frontScroll;
+    margin-top: 6vw;
+    z-index: 3;
+
 }
 
-// margin-top: 12rem;
-// margin-left: 7rem;
+.frontPage {
+    @extend .page;
+    // height: calc(100vh + 5vw);
+}
+
+
+.frontScroll2 {
+    @extend .frontScroll;
+}
