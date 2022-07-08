@@ -1,7 +1,6 @@
 @import './../Global.scss';
 @import './Scroll.scss';
 
-$primary-color: rgb(16,30,50);
 
 // parallax stuff
 .page3 {
@@ -56,6 +55,19 @@ $primary-color: rgb(16,30,50);
 .topSkill {
     @extend .smallerTitle;
     margin-top: 0px;
+    margin-bottom: 2vw;
 }
 
 
+.skillFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pText2 {
+    @extend .pText;
+    text-align: left;
+    width: 60%;
+    margin-left: 10vw;
+}

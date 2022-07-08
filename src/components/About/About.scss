@@ -2,3 +2,8 @@
     @extend .frontScroll;
     transform: scaleY(-1);
 }
+
+.pText3 {
+    @extend .pText2;
+    width: 40% !important;
+}

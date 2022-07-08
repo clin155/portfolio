@@ -52,6 +52,7 @@ $text-color: white;
 .smallerTitle {
     @extend .title;
     margin: 10vw;
+    margin-bottom: 5vw;
     margin-top: 14vw;
     font-size: clamp(2rem, calc(1rem + 8vw), 4rem) !important;
 
@@ -74,4 +75,12 @@ $text-color: white;
 
     color: $text-color;
     font-size: $text-size;    text-align: center;
+}
+
+.pText {
+    text-align: justify;
+    font-size: large;
+    color: white;
+    width: 75%;
+    line-height: 1.4;
 }
