@@ -5,7 +5,7 @@ import React from 'react';
 import trees from "./../../static/images/trees-min.png";
 import layer1 from "./../../static/images/layer 1-min.png";
 import layer2 from "./../../static/images/layer 2-min.png";
-import layer3 from "./../../static/images/layer 3-min.png";
+// import layer3 from "./../../static/images/layer 3-min.png";
 import moon from "./../../static/images/moon-min.png";
 
 export class Home extends React.Component {
@@ -28,7 +28,7 @@ export class Home extends React.Component {
     <Background classs="frontScroll" />
     <Layer classs="frontScroll" percent={140} end="+=4000" layer={moon}/>
     {/* <Layer classs="frontScroll" percent={150} end="+=3700" layer={layer4}/> */}
-    <Layer classs="frontScroll" percent={180} end="+=3700" layer={layer3}/>
+    {/* <Layer classs="frontScroll" percent={180} end="+=3700" layer={layer3}/> */}
     <Layer classs="frontScroll"  percent={160} end="+=4000" layer={layer2}/>
     <Layer classs="frontScroll" percent={250} end="+=8000" layer={layer1}/>
     <Trees classs="frontScrollTrees" handleResize={this.handleResize}/>

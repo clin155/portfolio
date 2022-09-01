@@ -41,7 +41,7 @@ export function Layer(props) {
                 start: "top top",
                 end: props.end,
                 scrub: true,
-                toggleActions: "restart pause pause reverse",
+                toggleActions: "restart pause reverse pause",
                 ease: "none",
             }
         })
