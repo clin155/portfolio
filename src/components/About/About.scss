@@ -5,5 +5,22 @@
 
 .pText3 {
     @extend .pText2;
-    width: 40% !important;
+    width: 50% !important;
+}
+
+.pic {
+    width: 25%;
+    height: 35%;
+    object-fit: cover;
+    margin-right: 15%;
+    margin-top: 20%;
+
+
+}
+
+.gorker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
