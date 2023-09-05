@@ -41,7 +41,7 @@ export function Contact(props) {
                 <div className="contactGrid">
                     <div className='contactFlex'>
                         <h1 className="title2">Contact Me</h1>
-                        <p className="pText">I am interested in full-stack internships and co-ops. However, if you have a request or further questions do hesitate to contact me.</p>
+                        <p className="pText">I am interested in full-stack internships and co-ops. However, if you have a request or further questions do not hesitate to contact me.</p>
                         <div className="contact-form">
                             <form ref={form} onSubmit={sendEmail}>
                             <ul>
